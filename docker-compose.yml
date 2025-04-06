@@ -1,0 +1,11 @@
+services:
+  especialista-java:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: especialista-java
+    volumes:
+      - ./Codigos:/usr/src/especialista-java/Codigos
+    tty: true
+    stdin_open: true
+    working_dir: /usr/src/especialista-java
